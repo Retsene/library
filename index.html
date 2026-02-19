@@ -9,25 +9,47 @@
 </head>
 
 <body>
-  <div class="container">
-    <!-- Header -->
-    <div class="header">
-      <div class="header-text">minimal library.</div>
-      <button class="add-btn">+ Add book</button>
-    </div>
+  <!-- Header -->
+  <header>
+    <div class="header-text">minimal library.</div>
+    <button id="add-btn">+ Add book</button>
+  </header>
 
-    <!-- Content -->
-    <!-- <div class="content"> -->
-    <!--   <div class="book"> -->
-    <!--     <div class="book-header">Harry Potter and the Philosopher's Stone</div> -->
-    <!--     <div class="book-auther">J.K. Rowling</div> -->
-    <!--     <div class="book-pages">223</div> -->
-    <!--   </div> -->
-    <!-- </div> -->
+  <!-- Popup -->
+  <dialog id="popup-dialog">
+    <form action="" id="form-popup">
+      <input type="text" id="title" placeholder="Title" required>
+      <input type="text" id="author" placeholder="Author" required>
+      <input type="number" id="pages" placeholder="Pages" required>
+
+      <label for="">
+        <input type="checkbox" id="read"> Read
+      </label>
+
+      <button type="submit">Add book</button>
+      <button type="reset" id="close-popup">Cancel</button>
+
+    </form>
+  </dialog>
+
+  <!-- Content -->
+  <main>
+    <p id="counter"></p>
+    <p id="library-container"></p>
+  </main>
+
+  <!-- Content -->
+  <!-- <div class="content"> -->
+  <!--   <div class="book"> -->
+  <!--     <div class="book-header">Harry Potter and the Philosopher's Stone</div> -->
+  <!--     <div class="book-auther">J.K. Rowling</div> -->
+  <!--     <div class="book-pages">223</div> -->
+  <!--   </div> -->
+  <!-- </div> -->
 
 
-    <!-- Form -->
-    <div class="form">
+  <!-- Form -->
+  <!-- <div class="form">
       <h2>Add new book</h2>
       <form action="">
         <div class="form-group">
@@ -55,11 +77,13 @@
           <button type="button" class="summit-btn">Summit</button>
         </div>
       </form>
-    </div>
+    </div> -->
 
-    <!-- Footer -->
+  <!-- Footer -->
+  <footer>
     <div class="footer">Made by @Retsene</div>
-  </div>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 

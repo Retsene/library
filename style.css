@@ -1,38 +1,48 @@
-.container {
+body {
+  min-height: 100vh;
   display: grid;
-  grid-template-rows: 80px 1fr auto;
-  height: 100vh;
+  grid-template-rows: 5vh 1fr auto;
 }
 
 /* Header */
-.header {
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.header .add-btn {
+header #add-btn {
   background-color: blue;
   color: white;
   border: none;
 }
-/* Content */
-.content {
-  flex-grow: 1;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+
+header #add-btn:hover {
+  background-color: lightblue;
+  cursor: pointer;
 }
 
-.content .book {
-  border: 2px solid black;
-  height: 200px;
+/* Dialog */
+#popup-dialog {
+  border-width: 2px;
+  border-color: rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25);
+  width: fit-content;
+}
+
+#popup-dialog::backdrop {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* Form */
+#form-popup {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 /* Footer */
-.footer {
+footer {
   display: flex;
   flex-direction: column;
   align-items: center;
